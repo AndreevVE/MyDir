@@ -1,0 +1,53 @@
+cd /mydir
+git init
+git add *
+git commit - m 'comment'
+
+
+
+curl -u 'AndreevVE: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' https://api.github.com/user/repos -d '{"name":"VPN2SPB"}'
+git branch -M main
+git remote add origin git@github.com:AndreevVE/Working-with-GIT.git
+
+
+Local
+
+
+mkdir test
+cd test
+git init 
+echo "This repo was created remotely" >> README.md
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:USER/test.git
+curl -u 'USER:TOKEN' https://api.github.com/user/repos -d '{"name":"test"}'
+git push -u origin master
+
+
+
+remout
+
+Create a new repository  -  Working with GIT
+
+cd /Git
+
+git clone git@github.com:AndreevVE/Working-with-GIT.git
+
+cd Working-with-GIT
+
+touch song.txt
+
+git status
+
+git add Song.txt
+
+У Git есть три основных
+состояния, в которых могут находиться ваши файлы: изменён (modified), индексирован
+(staged) и зафиксирован (committed):
+• К изменённым относятся файлы, которые поменялись, но ещё не были зафиксированы.
+• Индексированный — это изменённый файл в его текущей версии, отмеченный для
+включения в следующий коммит.
+• Зафиксированный значит, что файл уже сохранён в вашей локальной базе.
+
+
+
